@@ -8,7 +8,7 @@ function Modal({ setOpenModal }) {
       <div className="modalContainer">
         <div className="titleCloseBtn">
           <button id="xbtn"
-            onClick={() => {
+            onClick={(_handleclick) => {
               setOpenModal(false);
             }}
           >
@@ -21,7 +21,8 @@ function Modal({ setOpenModal }) {
 
         <div className="footer">
           <button
-            onClick={() => {
+            onClick={(_handleclick) => {
+              alert('Sure!You are back to the page.');
               setOpenModal(false);
             }}
             id="gobackBtn"
