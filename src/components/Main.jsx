@@ -9,6 +9,7 @@ function Modal({ setOpenModal }) {
         <div className="titleCloseBtn">
           <button id="xbtn"
             onClick={(_handleclick) => {
+              alert('Sure!You are back to the page.');
               setOpenModal(false);
             }}
           >
